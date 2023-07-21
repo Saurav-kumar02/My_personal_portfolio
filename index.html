@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
     <style>
@@ -41,8 +42,10 @@
         color: white;
      }
      nav ul li a:hover{
-        color: rgb(154, 154, 224);
+        background: #0ef;
+        color:white;
         font-size: 1.01rem;
+        box-shadow: 0 0 20px #0ef;
      }
      .left{
         font-size: 1.5rem; 
@@ -65,10 +68,10 @@
         width: 80%;
      }
      .purple{
-        color:blueviolet;
+        color:#0ef;
      }
      #element{
-        color: blueviolet; 
+        color: #0ef; 
      }
      .SecondSection{
         max-width: 80vw ;
@@ -130,6 +133,25 @@
     .footer ul{
         list-style: none;
     }
+    .fotersecond a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius: 250%;
+        font-size: 20px;
+        color: #0ef;
+        text-decoration: none;
+        margin: 10px 15px 0 0;
+    }
+    .fotersecond a:hover{
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0ef;
+    }
     .footer > div{
         width: 223px; 
     }
@@ -143,20 +165,22 @@
     }
     .leftSection .btn{
         padding: 12px;
-        background: #1e2167;
-        color: white;
-        border: 2px solid white;
+        background: #0ef;
+        color: black;
+        border: 2px solid black;
         font-size: 20px;
         cursor: pointer;
     }
-    .leftSection a:link,a:visited {
-        color: white;
+    .buttons a:link,a:visited {
         text-decoration: none;
     }
+    .leftSection .b{
+        color: black;
+    }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1400px) {
         body{
-      background-color: red;
+      background-color: #010f11;
     }
     .firstSection{
         flex-direction: column-reverse;
@@ -233,7 +257,7 @@
              <span id="element"></span>
              <div class="buttons">
                 <button class="btn">Download Resume</button>
-                <button class="btn"><a href="https://github.com/Saurav-kumar02">Visit Github</a></button>
+                <button class="btn"><a href="https://github.com/Saurav-kumar02"><span class="b">Visit Github</span></a></button>
              </div>
             </div>
             <div class="RightSection">
@@ -294,6 +318,7 @@
             </div>
         </div>
         </section>
+
     </main>
 
     <footer>
@@ -302,30 +327,11 @@
                 <h3>Saurav's developer portfolio</h3>
             </div>
             <div class="fotersecond">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                </ul>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
             </div>
-            <div class="footerthird">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                </ul>
-            </div>
-            <div class="footerfourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                </ul>
-            </div>
-        </div>
+           </div>
         <div class="footer-right">
              Copywright  &#169; saurav'sportfolio.com | All Rights Reserved
         </div>
